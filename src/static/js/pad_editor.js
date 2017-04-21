@@ -1,5 +1,5 @@
 /**
- * This code is mostly from the old Etherpad. Please help us to comment this code. 
+ * This code is mostly from the old Etherpad. Please help us to comment this code.
  * This helps other people to understand this code better and helps them to improve it.
  * TL;DR COMMENTS ON THIS FILE ARE HIGHLY APPRECIATED
  */
@@ -102,7 +102,7 @@ var padeditor = (function()
           pad.changeViewOption(font, $("#viewfontmenu").val() == sfont);
         });
       });
-      
+
       // Language
       html10n.bind('localized', function() {
         $("#languagemenu").val(html10n.getLanguage());
@@ -185,7 +185,7 @@ var padeditor = (function()
 
       // No font has been previously selected so use the Normal font
       if(normalFont){
-        self.ace.setProperty("textface", "'Helvetica Neue',Arial, sans-serif");
+        self.ace.setProperty("textface", "Muli, Avenir, Arial, sans-serif");
         // $("#viewfontmenu").val("normal");
       }
 

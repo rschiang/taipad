@@ -14,7 +14,7 @@ html {
 }
 body,
 textarea {
-  font-family: Helvetica, Arial, sans-serif
+  font-family: Roboto, -apple-system, Arial, sans-serif;
 }
 iframe {
   position: absolute
@@ -46,11 +46,6 @@ a img {
 /* menu */
 .toolbar {
   background: #f7f7f7;
-  background: -webkit-linear-gradient(#f7f7f7, #f1f1f1 80%);
-  background: -moz-linear-gradient(#f7f7f7, #f1f1f1 80%);
-  background: -o-linear-gradient(#f7f7f7, #f1f1f1 80%);
-  background: -ms-linear-gradient(#f7f7f7, #f1f1f1 80%);
-  background: linear-gradient(#f7f7f7, #f1f1f1 80%);
   border-bottom: 1px solid #ccc;
   overflow: hidden;
   padding-top: 4px;
@@ -82,47 +77,19 @@ a img {
 }
 .toolbar ul li a:hover {
   text-decoration: none;
-}
-.toolbar ul li a:hover {
   background: #fff;
-  background: -webkit-linear-gradient(#f4f4f4, #e4e4e4);
-  background: -moz-linear-gradient(#f4f4f4, #e4e4e4);
-  background: -o-linear-gradient(#f4f4f4, #e4e4e4);
-  background: -ms-linear-gradient(#f4f4f4, #e4e4e4);
-  background: linear-gradient(#f4f4f4, #e4e4e4);
+  color: #616161;
 }
 .toolbar ul li a:active {
-  background: #eee;
-  background: -webkit-linear-gradient(#ddd, #fff);
-  background: -moz-linear-gradient(#ddd, #fff);
-  background: -o-linear-gradient(#ddd, #fff);
-  background: -ms-linear-gradient(#ddd, #fff);
-  background: linear-gradient(#ddd, #fff);
-  -webkit-box-shadow: 0 0 8px rgba(0,0,0,.1) inset;
-  -moz-box-shadow: 0 0 8px rgba(0,0,0,.1) inset;
-  box-shadow: 0 0 8px rgba(0,0,0,.1) inset;
+  color: #424242;
 }
 .toolbar ul li .activeButton {
-  background: #eee;
-  background: -webkit-linear-gradient(#ddd, #fff);
-  background: -moz-linear-gradient(#ddd, #fff);
-  background: -o-linear-gradient(#ddd, #fff);
-  background: -ms-linear-gradient(#ddd, #fff);
-  background: linear-gradient(#ddd, #fff);
-  -webkit-box-shadow: 0 0 8px rgba(0,0,0,.1) inset;
-  -moz-box-shadow: 0 0 8px rgba(0,0,0,.1) inset;
-  box-shadow: 0 0 8px rgba(0,0,0,.1) inset;
+  color: #424242;
 }
 .toolbar ul li a {
-  background: #fff;
-  background: -webkit-linear-gradient(#fff, #f0f0f0);
-  background: -moz-linear-gradient(#fff, #f0f0f0);
-  background: -o-linear-gradient(#fff, #f0f0f0);
-  background: -ms-linear-gradient(#fff, #f0f0f0);
-  background: linear-gradient(#fff, #f0f0f0);
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 3px;
-  color: #ccc;
+  color: #757575;
   cursor: pointer;
   display: inline-block;
   min-height: 18px;
@@ -137,12 +104,11 @@ a img {
   top: 1px;
 }
 .toolbar ul li a .buttontext {
-  color: #666;
+  color: inherit;
   font-size: 14px;
   border:none;
   background:none;
   margin-top:1px;
-  color:#666;
 }
 
 .buttontext::-moz-focus-inner {
@@ -155,26 +121,8 @@ a img {
   border: 1px solid #666 !important;
 }
 
-.toolbar ul li a.grouped-left {
-  border-radius: 3px 0 0 3px;
-}
-.toolbar ul li a.grouped-middle {
-  border-radius: 0;
-  margin-left: -2px;
-  border-left: 0;
-}
-.toolbar ul li a.grouped-right {
-  border-radius: 0 3px 3px 0;
-  margin-left: -2px;
-  border-left: 0;
-}
 .toolbar ul li a.selected {
-  background: #eee !important;
-  background: -webkit-linear-gradient(#EEE, #F0F0F0) !important;
-  background: -moz-linear-gradient(#EEE, #F0F0F0) !important;
-  background: -o-linear-gradient(#EEE, #F0F0F0) !important;
-  background: -ms-linear-gradient(#EEE, #F0F0F0) !important;
-  background: linear-gradient(#EEE, #F0F0F0) !important;
+  color: #424242 !important;
 }
 .toolbar ul li select {
   background: #fff;
@@ -781,7 +729,7 @@ table#otheruserstable {
   font-size: 15px;
   font-style: normal;
   font-weight: normal;
-  color: #666;
+  color: inherit;
   cursor: pointer;
 }
 
@@ -1321,5 +1269,3 @@ input[type=checkbox] {
 .hideControlsEditbar{
   display:none !important;
 }
-
-
