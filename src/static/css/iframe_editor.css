@@ -79,7 +79,7 @@ body.doesWrap:not(.noprewrap) > div{
   font-size: 11px;
   font-family: monospace;
   line-height: 24px; /* overridden by sideDiv.style */
-  padding-top: 16px; /* EDIT_BODY_PADDING_TOP */
+  padding-top: 24px; /* EDIT_BODY_PADDING_TOP */
   padding-right: 3px; /* LINE_NUMBER_PADDING_RIGHT - 1 */
   position: absolute;
   width: 54px; /* MIN_LINEDIV_WIDTH */
@@ -105,7 +105,7 @@ body.doesWrap:not(.noprewrap) > div{
   display: block; /* codemirror says it suppresses bugs */
   position: relative;
   left: 32px; /* MIN_LINEDIV_WIDTH + LINE_NUMBER_PADDING_RIGHT + EDIT_BODY_PADDING_LEFT */
-  top: 15px; /* EDIT_BODY_PADDING_TOP - 1*/
+  top: 23px; /* EDIT_BODY_PADDING_TOP - 1*/
   border: 0;
   width: 1px; /* changed programmatically */
   height: 1px; /* changed programmatically */
