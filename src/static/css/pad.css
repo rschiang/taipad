@@ -536,8 +536,8 @@ table#otheruserstable {
   position: absolute;
   bottom: 0px;
   right: 24px;
-  width: 180px;
-  height: 200px;
+  width: 240px;
+  height: 280px;
   z-index: 400;
   background-color: #fafafa;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
@@ -851,6 +851,9 @@ input[type=checkbox] {
   background: #fafafa;
   box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3);
   color: #222;
+}
+.popup textarea {
+  width: 100%;
 }
 .popup input[type=text] {
   width: 100%;

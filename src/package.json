@@ -43,7 +43,9 @@
                       "jsonminify"              : "0.4.1",
                       "measured"                : "1.1.0",
                       "mocha"                   : "2.4.5",
-                      "supertest"               : "1.2.0"
+                      "supertest"               : "1.2.0",
+                      "ep_headings2"            : "rschiang/ep_headings2",
+                      "ep_author_neat"          : "rschiang/ep_author_neat"
                      },
   "bin":             { "etherpad-lite": "./node/server.js" },
   "devDependencies": {
