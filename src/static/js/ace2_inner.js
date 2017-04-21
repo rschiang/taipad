@@ -71,7 +71,7 @@ function Ace2Inner(){
 
   var LINE_NUMBER_PADDING_RIGHT = 4;
   var LINE_NUMBER_PADDING_LEFT = 4;
-  var MIN_LINEDIV_WIDTH = 20;
+  var MIN_LINEDIV_WIDTH = 54;
   var EDIT_BODY_PADDING_TOP = 8;
   var EDIT_BODY_PADDING_LEFT = 8;
 
@@ -258,26 +258,8 @@ function Ace2Inner(){
         var anchorStyle = dynamicCSS.selectorStyle(authorSelector + ' > a')
 
         // author color
-        authorStyle.backgroundColor = bgcolor;
-        parentAuthorStyle.backgroundColor = bgcolor;
-
-        // text contrast
-        if(colorutils.luminosity(colorutils.css2triple(bgcolor)) < 0.5)
-        {
-          authorStyle.color = '#ffffff';
-          parentAuthorStyle.color = '#ffffff';
-        }else{
-          authorStyle.color = null;
-          parentAuthorStyle.color = null;
-        }
-
-        // anchor text contrast
-        if(colorutils.luminosity(colorutils.css2triple(bgcolor)) < 0.55)
-        {
-          anchorStyle.color = colorutils.triple2css(colorutils.complementary(colorutils.css2triple(bgcolor)));
-        }else{
-          anchorStyle.color = null;
-        }
+        authorStyle.borderBottom = '2px dotted ' + bgcolor;
+        parentAuthorStyle.color = bgcolor;
       }
     }
   }

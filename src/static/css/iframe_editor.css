@@ -28,7 +28,8 @@ body {
 #outerdocbody {
   background-color: #fff;
 }
-body.grayedout { background-color: #eee !important }
+
+body.grayedout { opacity: .54; }
 
 #innerdocbody {
   font-size: 16px; /* overridden by body.style */
@@ -65,7 +66,7 @@ body.doesWrap:not(.noprewrap) > div{
 
 #innerdocbody {
   padding-top: 1px; /* important for some reason? */
-  padding-right: 10px;
+  padding-right: 60px;
   padding-bottom: 8px;
   padding-left: 1px /* prevents characters from looking chopped off in FF3 -- Removed because it added too much whitespace */;
   overflow: hidden;
@@ -76,11 +77,11 @@ body.doesWrap:not(.noprewrap) > div{
 #sidediv {
   font-size: 11px;
   font-family: monospace;
-  line-height: 16px; /* overridden by sideDiv.style */
+  line-height: 24px; /* overridden by sideDiv.style */
   padding-top: 8px; /* EDIT_BODY_PADDING_TOP */
   padding-right: 3px; /* LINE_NUMBER_PADDING_RIGHT - 1 */
   position: absolute;
-  width: 20px; /* MIN_LINEDIV_WIDTH */
+  width: 54px; /* MIN_LINEDIV_WIDTH */
   top: 0;
   left: 0;
   cursor: default;
@@ -92,9 +93,8 @@ body.doesWrap:not(.noprewrap) > div{
 }
 
 .sidedivdelayed { /* class set after sizes are set */
-  background-color: #eee;
-  color: #888 !important;
-  border-right: 1px solid #ccc;
+  background-color: white;
+  color: #9e9e9e !important;
 }
 .sidedivhidden {
   display: none;

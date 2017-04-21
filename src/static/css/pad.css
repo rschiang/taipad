@@ -157,13 +157,21 @@ li[data-key=showusers] > a #online_count {
   display:none;
 }
 
+#editorcontainerbox {
+    background: #eee;
+}
+
 #editorcontainer {
   position: absolute;
   top: 37px; /* + 1px border */
   left: 0px;
   right: 0px;
   bottom: 0px;
+  max-width: 900px;
+  margin: auto;
   z-index: 1;
+  background: white;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
 
   /* Required to be able to scroll on iOS: */
   -webkit-overflow-scrolling: touch;
