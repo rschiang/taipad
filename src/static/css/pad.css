@@ -29,17 +29,10 @@ iframe {
 }
 
 #users {
-  background: #f7f7f7;
-  background: -webkit-linear-gradient( #F7F7F7,#EEE);
-  background: -moz-linear-gradient( #F7F7F7,#EEE);
-  background: -ms-linear-gradient( #F7F7F7,#EEE);
-  background: -o-linear-gradient( #F7F7F7,#EEE);
-  background: linear-gradient( #F7F7F7,#EEE);
-  width: 160px;
-  color: #fff;
-  padding: 5px;
-  border-radius: 0 0 6px 6px;
-  border: 1px solid #ccc;
+  background: #fafafa;
+  width: 200px;
+  box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3);
+  padding: 4px;
 }
 #otherusers {
   max-height: 400px;
@@ -169,7 +162,7 @@ li[data-key=showusers] > a #online_count {
   line-height: 12px;
   position: absolute;
   top: 20px;
-  right: 4px;
+  right: 6px;
   min-width: 12px;
   height: 12px;
   border-radius: 50%;

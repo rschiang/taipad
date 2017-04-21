@@ -759,13 +759,7 @@ var paduserlist = (function()
 
       $("#myswatch").css({'background-color': myUserInfo.colorId});
 
-      if (browser.msie && parseInt(browser.version) <= 8) {
-        $("li[data-key=showusers] > a").css({'box-shadow': 'inset 0 0 30px ' + myUserInfo.colorId,'background-color': myUserInfo.colorId});
-      }
-      else
-      {
-        $("li[data-key=showusers] > a").css({'box-shadow': 'inset 0 0 30px ' + myUserInfo.colorId});
-      }
+      $("li[data-key=showusers] #online_count").css({'background-color': myUserInfo.colorId});
     }
   };
   return self;
