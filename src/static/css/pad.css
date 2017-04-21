@@ -15,6 +15,10 @@ html {
 body,
 textarea {
   font-family: Roboto, -apple-system, Arial, sans-serif;
+  color: #424242;
+}
+body {
+  background: #eee;
 }
 iframe {
   position: absolute
@@ -45,13 +49,17 @@ a img {
 }
 /* menu */
 .toolbar {
-  background: #f7f7f7;
-  border-bottom: 1px solid #ccc;
-  overflow: hidden;
+  position: relative; /* force layered rendering */
+  z-index: 10;
+  background: #fafafa;
   padding-top: 4px;
   width: 100%;
   white-space: nowrap;
   height: 32px;
+  border: none;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  /*max-width: 900px;*/
+  margin: auto;
 }
 .toolbar ul {
   position: absolute;
@@ -60,7 +68,7 @@ a img {
   padding-left: 1px;
   z-index: 2;
   overflow: hidden;
-  float: left
+  float: left;
 }
 .toolbar ul li {
   float: left;
@@ -127,6 +135,7 @@ a img {
 .toolbar ul li select {
   background: #fff;
   padding: 4px;
+  padding-right: 8px;
   line-height: 22px; /* fix for safari (win/mac) */
   height: 28px; /* fix for chrome (mac) */
   border-radius: 3px;
@@ -157,10 +166,6 @@ li[data-key=showusers] > a #online_count {
   display:none;
 }
 
-#editorcontainerbox {
-    background: #eee;
-}
-
 #editorcontainer {
   position: absolute;
   top: 37px; /* + 1px border */
@@ -171,7 +176,7 @@ li[data-key=showusers] > a #online_count {
   margin: auto;
   z-index: 1;
   background: white;
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
 
   /* Required to be able to scroll on iOS: */
   -webkit-overflow-scrolling: touch;
@@ -517,18 +522,13 @@ table#otheruserstable {
 #chatbox {
   position: absolute;
   bottom: 0px;
-  right: 20px;
+  right: 24px;
   width: 180px;
   height: 200px;
   z-index: 400;
-  background-color: #f7f7f7;
-  border-left: 1px solid #999;
-  border-right: 1px solid #999;
-  border-top: 1px solid #999;
-  padding: 3px;
-  padding-bottom: 10px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  background-color: #fafafa;
+  padding: 4px;
+  padding-bottom: 12px;
   display: none;
 }
 #chattext {
@@ -545,7 +545,7 @@ table#otheruserstable {
   z-index: 1002;
 }
 #chattext p {
-  padding: 3px;
+  padding: 4px;
   -ms-overflow-x: hidden;
   overflow-x: hidden;
 }
@@ -566,11 +566,10 @@ table#otheruserstable {
   display: none;
 }
 #chatinputbox {
-  padding: 3px 2px;
   position: absolute;
   bottom: 0px;
   right: 0px;
-  left: 3px;
+  left: 0px;
 }
 #chatlabel {
   font-size: 13px;
@@ -581,7 +580,9 @@ table#otheruserstable {
   vertical-align: middle;
 }
 #chatinput {
-  border: 1px solid #BBBBBB;
+  box-sizing: border-box;
+  padding: 2px 4px;
+  outline: none;
   width: 100%;
   float: right;
 }
@@ -589,14 +590,10 @@ table#otheruserstable {
   z-index: 400;
   position: fixed;
   bottom: 0px;
-  right: 20px;
-  padding: 5px;
-  border-left: 1px solid #999;
-  border-right: 1px solid #999;
-  border-top: 1px solid #999;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  background-color: #fff;
+  right: 24px;
+  padding: 4px 8px;
+  background: #fafafa;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
   cursor: pointer;
 }
 #chaticon a {
@@ -834,18 +831,8 @@ input[type=checkbox] {
   width: 80%;
   max-width: 500px;
   padding: 10px;
-  border-radius: 0 0 6px 6px;
-  border: 1px solid #ccc;
-  border-top: none;
-  background: #f7f7f7;
-  background: -webkit-linear-gradient(#F7F7F7, #EEE);
-  background: -moz-linear-gradient(#F7F7F7, #EEE);
-  background: -ms-linear-gradient(#F7F7F7, #EEE);
-  background: -o-linear-gradient(#F7F7F7, #EEE);
-  background: linear-gradient(#F7F7F7, #EEE);
-  -webkit-box-shadow: 0 0 8px #888;
-  -moz-box-shadow: 0 0 8px #888;
-  box-shadow: 0 2px 4px #ddd;
+  background: #fafafa;
+  box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3);
   color: #222;
 }
 .popup input[type=text] {
@@ -1017,7 +1004,7 @@ input[type=checkbox] {
 }
 
 /* Mobile devices */
-@media only screen and (min-device-width: 320px) and (max-device-width: 720px) {
+@media only screen and (max-width: 900px) {
     #users {
       top: auto;
       right:0px !important;
@@ -1035,17 +1022,11 @@ input[type=checkbox] {
     #editorcontainer {
       margin-bottom: 33px
     }
-    /* cancel non-mobile border (will be defined on ".toolbar ul.menu_left" bellow) */
     .toolbar {
-      border-bottom: 0;
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
     }
     .toolbar ul {
-      background: #f7f7f7;
-      background: -webkit-linear-gradient(#f7f7f7, #f1f1f1 80%);
-      background: -moz-linear-gradient(#f7f7f7, #f1f1f1 80%);
-      background: -o-linear-gradient(#f7f7f7, #f1f1f1 80%);
-      background: -ms-linear-gradient(#f7f7f7, #f1f1f1 80%);
-      background: linear-gradient(#f7f7f7, #f1f1f1 80%);
+      background: #fafafa;
       width: 100%;
       overflow: hidden;
     }
@@ -1054,7 +1035,6 @@ input[type=checkbox] {
       position: fixed;
       top: 0;
       padding-top: 4px;
-      border-bottom: 1px solid #ccc;
       z-index: 10;
     }
     .toolbar ul.menu_right {
@@ -1062,7 +1042,6 @@ input[type=checkbox] {
       height: 32px;
       position: fixed;
       bottom: 0;
-      border-top: 1px solid #ccc;
     }
     .toolbar ul.menu_right > li:last-child {
       float: right;

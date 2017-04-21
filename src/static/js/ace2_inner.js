@@ -72,7 +72,7 @@ function Ace2Inner(){
   var LINE_NUMBER_PADDING_RIGHT = 4;
   var LINE_NUMBER_PADDING_LEFT = 4;
   var MIN_LINEDIV_WIDTH = 54;
-  var EDIT_BODY_PADDING_TOP = 8;
+  var EDIT_BODY_PADDING_TOP = 16;
   var EDIT_BODY_PADDING_LEFT = 8;
 
   var caughtErrors = [];
