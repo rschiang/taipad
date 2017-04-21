@@ -23,6 +23,7 @@ body {
   margin: 0;
   white-space: nowrap;
   word-wrap: normal;
+  transition: opacity .56s ease;
 }
 
 #outerdocbody {
