@@ -228,7 +228,7 @@ li[data-key=showusers] > a #online_count {
 .loadingAnimation{
   -webkit-animation: loadingAnimation 2s infinite linear;
   animation: loadingAnimation 2s infinite linear;
-  font-family: "fontawesome-etherpad";
+  font-family: "Material Icons";
   font-size:24px;
   z-index:150;
   width:25px;
@@ -236,7 +236,7 @@ li[data-key=showusers] > a #online_count {
 }
 
 .loadingAnimation:before{
-  content: "\e80e";
+  content: "cached";
 }
 
 @-webkit-keyframes loadingAnimation {
@@ -671,28 +671,39 @@ table#otheruserstable {
   font-family: "Arial";
 }
 .exportlink{
-  font-family: "fontawesome-etherpad";
+  font-family: "Material Icons";
   display:block;
   margin:5px;
   color:#666;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
 }
 #exporthtmla:before {
-  content: "\e826";
+  content: "web";
 }
 #exportplaina:before {
-  content: "\e802";
+  content: "insert_drive_file";
 }
 #exportworda:before {
-  content: "\e804";
+  content: "insert_drive_file";
 }
 #exportpdfa:before {
-  content: "\e803";
+  content: "picture as pdf";
 }
 #exportetherpada:before {
-  content: "\e806";
+  content: "description";
 }
 #exportopena:before {
-  content: "\e805";
+  content: "description";
 }
 
 /* hidden element */
@@ -744,12 +755,21 @@ table#otheruserstable {
   border: none;
   padding: 0;
   background: none;
-  font-family: "fontawesome-etherpad";
+  font-family: "Material Icons";
   font-size: 20px;
-  font-style: normal;
-  font-weight: normal;
   color: inherit;
   cursor: pointer;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
 }
 .buttonicon:focus, .buttonicon:hover {
   background: #e0e0e0;
@@ -763,58 +783,61 @@ table#otheruserstable {
 }
 
 .buttonicon-bold:before {
-  content: "\e81c";
+  content: "format_bold";
 }
 .buttonicon-italic:before {
-  content: "\e81d";
+  content: "format_italic";
 }
 .buttonicon-underline:before {
-  content: "\e817";
+  content: "format_underlined";
 }
 .buttonicon-strikethrough:before {
-  content: "\e818";
+  content: "format_strikethrough";
 }
 .buttonicon-insertorderedlist:before {
-  content: "\e816";
+  content: "format_list_numbered";
 }
 .buttonicon-insertunorderedlist:before {
-  content: "\e815";
+  content: "format_list_bulleted";
 }
 .buttonicon-indent:before {
-  content: "\e814";
+  content: "format_indent_increase";
 }
 .buttonicon-outdent:before {
-  content: "\e813";
+  content: "format_indent_decrease";
 }
 .buttonicon-undo:before {
-  content: "\e823";
+  content: "undo";
 }
 .buttonicon-redo:before {
-  content: "\e824";
+  content: "redo";
 }
 .buttonicon-clearauthorship:before {
-  content: "\e80d";
+  content: "format_clear";
 }
 .buttonicon-settings:before {
-  content: "\e833";
+  content: "settings";
 }
 .buttonicon-import_export:before {
-  content: "\e834";
+  content: "import_export";
 }
 .buttonicon-embed:before {
-  content: "\e827";
+  content: "share";
 }
 .buttonicon-history:before {
-  content: "\e837";
+  content: "history";
 }
 .buttonicon-chat:before {
-  content: "\e829";
+  content: "chat";
 }
 .buttonicon-showusers:before {
-  content: "\e808";
+  content: "people";
 }
 .buttonicon-savedRevision:before {
-  content: "\e835";
+  content: "save";
+}
+.buttonicon-embed-media::before {
+  content: "insert_link" !important;
 }
 #focusprotector {
   z-index: 100;
@@ -1237,40 +1260,42 @@ input[type=checkbox] {
 }
 
 @font-face {
-  font-family: "fontawesome-etherpad";
-  src:url("../../static/font/fontawesome-etherpad.eot");
-  src:url("../../static/font/fontawesome-etherpad.eot?#iefix") format("embedded-opentype"),
-    url("../../static/font/fontawesome-etherpad.woff") format("woff"),
-    url("../../static/font/fontawesome-etherpad.ttf") format("truetype"),
-    url("../../static/font/fontawesome-etherpad.svg#fontawesome-etherpad") format("svg");
-  font-weight: normal;
+  font-family: 'Material Icons';
   font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(../../static/font/material.woff2) format('woff2');
 
 }
 
 [data-icon]:before {
-  font-family: "fontawesome-etherpad" !important;
+  font-family: "Material Icons" !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
   text-transform: none !important;
-  speak: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
+  -moz-font-feature-settings: 'liga';
   -moz-osx-font-smoothing: grayscale;
 }
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  font-family: "fontawesome-etherpad" !important;
+  font-family: "Material Icons" !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
   text-transform: none !important;
-  speak: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
+  -moz-font-feature-settings: 'liga';
   -moz-osx-font-smoothing: grayscale;
 }
 

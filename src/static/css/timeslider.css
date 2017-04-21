@@ -98,8 +98,8 @@ p.pblort {
 #playpause_button_icon:before {
   line-height:44px;
   padding-left:2px;
-  font-family: fontawesome-etherpad;
-  content: "\e82c";
+  font-family: "Material Icons";
+  content: "play_arrow";
   font-size:24px;
   color:#666;
 }
@@ -113,8 +113,8 @@ p.pblort {
 .pause:before {
   line-height:44px;
   padding-left:2px;
-  font-family: fontawesome-etherpad;
-  content: "\e82e" !important;
+  font-family: "Material Icons";
+  content: "pause" !important;
   font-size:24px;
   color:#666;
   padding-left:0 !important;
@@ -129,7 +129,7 @@ p.pblort {
 }
 
 .stepper{
-  font-family: fontawesome-etherpad;
+  font-family: "Material Icons";
   border-radius:2px;
   border: #666 solid 1px;
 /*  line-height:18px; */
@@ -148,11 +148,11 @@ stepper:active{
   width: 25px;
 }
 #leftstep:before{
-  content: '\e821';
+  content: 'skip_previous';
   vertical-align:middle;
 }
 #rightstep:before{
-  content: "\e822";
+  content: "skip_next";
   vertical-align:middle;
 }
 
@@ -162,8 +162,8 @@ stepper:active{
   width: 25px;
 }
 .star:before{
-  font-family: fontawesome-etherpad;
-  content: "\e835";
+  font-family: "Material Icons";
+  content: "star";
   vertical-align:middle;
   font-size:16px;
 }
