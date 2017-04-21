@@ -771,6 +771,10 @@ table#otheruserstable {
   -moz-font-feature-settings: 'liga';
   -moz-osx-font-smoothing: grayscale;
 }
+.buttonicon::before {
+    display: inline-block;
+    vertical-align: middle;
+}
 .buttonicon:focus, .buttonicon:hover {
   background: #e0e0e0;
 }
